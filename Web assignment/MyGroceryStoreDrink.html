@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+body{
+    background-image: url(night\ mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Navigation bar*/
+
+.header {
+  overflow: hidden;
+  background-color: #161414;
+  padding: 20px 10px;
+  opacity: 0.7;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header a:hover {
+  background-color: #343232;
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+.desc,h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    font-family:monospace;
+    background: linear-gradient(90deg,rgb(219, 153, 31) 0%,rgb(222, 222, 222) 100%);
+}
+
+/*field description*/
+.fieldsetcontainer {
+  width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+
+}
+
+fieldset{
+    background-color: #343232;
+}
+
+legend{
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: coral;
+}
+
+.note{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background:linear-gradient(90deg,rgb(219, 153, 31) 0%,rgb(222, 222, 222) 100%);
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">SiBling MaRt</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="totalprice.html">Purchase</a>
+          <a href="aboutus.html">About Us</a>
+        </div>
+      </div>
+
+    <h1>Special Limited Edition International Drinks</h1>
+    
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="coca cola bleach.jpeg" style="width:100%">
+      <div class="text">Coca-Cola X Bleach Collab (RM 28)</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="pepsi_cola_cans.jpg" style="width:100%">
+      <div class="text">Pepsi-Cola Soda Shop Limited Edition (RM 35)</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="red bull fresh breeze.jpeg" style="width:100%">
+      <div class="text">Redbull Fresh Breeze Japan Limited Edition (RM 23)</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    
+  <p class="desc">DESCRIPTION</p>
+
+<div class="fieldsetcontainer">
+  <fieldset>
+    <legend>Coca-Cola X BLEACH</legend>
+    <p class="note">Special Limited Edition to all Bleach fans. Celebrate the new Bleach anime series Bleach: 
+       Thousand-Year Blood War freshly released this October 2022 with their limited collab edition with Coca-Cola Japan! </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Pepsi-Cola Soda Shop</legend>
+    <p class="note">As part of Soda Shop launch, Pepsi teamed up with recording artist Doja Cat to create a cover of the Grease classic 
+       "You're the One That I Want." This year marks the fiftieth anniversary of the hit musical debut, which would go on to 
+       be a blockbuster movie starring Olvia Newton-John and John Travolta.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Red Bull Fresh Breeze</legend>
+    <p class="note">A refreshing sweet peach flavor fills the mouth.
+        The acidity, which contributes to the freshness, is a little strong, which is typical of energy drinks.
+        There is almost no aftertaste and no stickiness that lingers in the mouth.
+        A slight peach aroma and taste remains, so you can also enjoy the aftertaste.
+        It is an artificial peach flavor, as it is a fruit-free drink, but it has the same squeezed fruit flavor and does not have a Red Bull-like quality.
+        It is not a punchy flavor, but the clean, crisp, spring-like peach taste is fresh and delicious.
+        It is not Red Bull-like, but you can feel the effects of a proper energy drink.</p>
+  </fieldset>
+</div>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
