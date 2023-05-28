@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(anime-my-neighbor-totoro-totoro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #161414;
+  padding: 20px 10px;
+  opacity: 0.7;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header a:hover {
+  background-color: #343232;
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+    margin-top: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-block: 50px;
+  
+}
+
+.knife, .drinks, .snacks {
+  width: 100%;
+  max-width: 4000px;
+  height: 250px;
+  object-fit:cover;
+  padding: 10px;
+  border-radius: 3vw;
+  transition: transform 0.3s ease;
+  border-style: groove;
+  border-color: white;
+  
+}
+
+.knife:hover, .drinks:hover, .snacks:hover {
+  transform: scale(1.2);
+}
+
+.welcome,h2 {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-kerning: auto;
+  color: azure;
+  margin-top: 20px;
+}
+h2{
+  background-color: #161414;
+}
+
+p.popu {
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+
+}
+
+
+
