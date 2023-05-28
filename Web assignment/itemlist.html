@@ -1,0 +1,185 @@
+<!--MUHAMMAD FIRDAUS ZUHAIRI BIN ZAILANI
+    202245736
+    RCDCS2512A
+    
+    Source code: ITEM LIST + INTERNAL CSS-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+body{
+  background-image: url(anime-my-neighbor-totoro-totoro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  }
+
+h1{
+    text-align: center;
+    color: beige;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #161414;
+  padding: 20px 10px;
+  opacity: 0.7;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header a:hover {
+  background-color: #343232;
+  color: rgb(255, 255, 255);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+.header-right {
+    float: none;
+    margin-top: 10px;
+  }
+}
+
+th{
+  background-color: rgb(120, 10, 10);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px
+}
+td{
+  background-color: rgb(90, 65, 65);
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 20px;
+  
+}
+
+table {
+    border-style:outset;
+    width: 1400px;
+    height: 400px;
+    table-layout: fixed; /* Ensures table width is fixed */
+    margin: 20px;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: rgb(224, 63, 4);}
+
+.tableadjust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    font-size: 30px;
+    background-color: #161414;
+}
+
+    </style>
+    </head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">SiBling MaRt</a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="itemlist.html">Item List</a>
+          <a href="totalprice.html">Purchase</a>
+          <a href="aboutus.html">About Us</a>
+        </div>
+      </div>
+
+
+    <h1>List of All Items</h1>
+    <div class="tableadjust">
+    <table>
+        <tr>
+            <th>Items</th>
+            <th>Name</th>
+            <th>Price (Unit/Set)</th>
+        </tr>
+        <tr>
+            <td class="items">Kitchen Knife</td>
+            <td>
+                <li>Japanese Damascus Knife Set</li>
+                <li>MOSFiATA 8-inch Knife</li>
+                <li>IKOMMI 2-piece Knife Set</li>     
+            </td>
+            <td>
+                <li>RM 4999</li>
+                <li>RM 779</li>
+                <li>RM 660</li>
+            </td>
+        </tr>
+        <tr>
+            <td class="items">Rare Drinks</td>
+            <td>
+                <li>Coca-Cola X BLEACH</li>
+                <li>Pepsi-Cola Soda Shop</li>
+                <li>Red Bull Fresh Breeze</li>
+            </td>
+            <td>
+                <li>RM 28</li>
+                <li>RM 35</li>
+                <li>RM 23</li>
+            </td>
+        </tr>
+        <tr>
+            <td class="items">Limited Time Snacks</td>
+            <td>
+                <li>Oreo X Blackpink</li>
+                <li>Lays Limited Flavors Set (3 flavor)</li>
+                <li>Doritos Guac and Salsa</li>
+            </td>
+            <td>
+                <li>RM 29</li>
+                <li>RM 36</li>
+                <li>RM 15</li>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+
+
+</html>
